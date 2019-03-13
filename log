@@ -1,0 +1,7 @@
+g++ -o ChatServer ChatServer.cc -I./lib/include ./lib/lib/libjsoncpp.a -std=c++11 -lpthread
+In file included from ChatServer.cc:1:0:
+ChatServer.hpp: 在静态成员函数‘static void* ChatServer::HandlerRequest(void*)’中:
+ChatServer.hpp:98:18: 错误：一元 ‘*’参数类型无效(有‘unsigned int’) 
+      send(sock, *result, sizeof(result), 0);
+                  ^
+make: *** [ChatServer] 错误 1
